@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Kurs Rupiah-Mata Uang Asing</legend>
+        <tr>
+            <th>Masukan Nilai</th>
+            <th>Values</th>
+            <th>Nilai Rupiah</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="nilai" value="0" onchange="hitung()"/>
+            </td>
+            <td>
+                <select id="values" onchange="hitung()">
+                    <option value="dollarasing">Dollar Singapore</option>
+                    <option value="ringgit">Ringgit Malaysia</option>
+                    <option value="dollar">Dollar US</option>
+                    <option value="yen">Yen Jepang</option>
+                    <option value="euro">Euro</option>
+                    <option value="riyal">Riyal Arab Saudi</option>
+                </select>
+            </td>
+            <td>
+                <input type="text" id="rupiah" value="0" />
+            </td>
+        </tr>
+    </fieldset>
+</body>
+</html>

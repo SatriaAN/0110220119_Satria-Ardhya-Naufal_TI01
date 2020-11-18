@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Box</title>
+    <style>
+        body{
+            background-color: darkorange;
+        }
+        .result-Chat{
+            min-height: 150px;
+            
+            width: 30%;
+            background-color: rgb(202, 230, 146);
+            color: rgb(0, 0, 0);
+            border: 1px solid rgb(238, 232, 226);
+        }
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <div class="result-Chat"></div>
+        <div>
+            <input type="text" class="input-Chat">
+            <button class="btn-Chat">Kirim!!</button>
+        </div>
+    </main>
+
+    <script>
+        let resultChat = document.querySelector(".result-Chat");
+        const inputChat = document.querySelector(".input-Chat");
+        const btnChat = document.querySelector(".btn-Chat");
+
+        btnChat.addEventListener("click",
+        function(){
+            resultChat.innerHTML =  resultChat.innerHTML + "<br>" + "Anda : " + inputChat.value;
+            inputChat.value= "";
+        }
+        )
+    </script>
+</body>
+</html>
